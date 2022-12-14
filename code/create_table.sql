@@ -1,3 +1,5 @@
+-- DATA ENGINEERING
+
 -- creating 'titles' table in employees_db
 CREATE TABLE titles (
   title_id VARCHAR(5) NOT NULL PRIMARY KEY,
@@ -45,16 +47,28 @@ CREATE TABLE dept_emp (
   FOREIGN KEY (dept_no) REFERENCES departments(dept_no)
 );
 
--- Import each CSV file into its corresponding SQL table data from csv files are imported to corresponding 
--- postgresql tables by using import/export function
+-- Data from csv files are imported to corresponding postgresql tables by using import/export function 
 
--- Data Analysis
+-- DATA ANALYSIS
 
 -- List the employee number, last name, first name, sex, and salary of each employee.
+SELECT e.emp_no, e.last_name, e.first_name, e.sex, s.salary
+FROM employees as e
+INNER JOIN salaries as s ON
+e.emp_no=s.emp_no;
 
 -- List the first name, last name, and hire date for the employees who were hired in 1986.
+SELECT first_name, last_name, hire_date
+FROM employees
+WHERE hire_date >= '01/01/1986' and  hire_date <= '12/31/1986'
 
 -- List the manager of each department along with their department number, department name, employee number, last name, and first name.
+SELECT dm.dept_no, d.dept_name, e.emp_no, e.last_name, e.first_name, e.hire_date
+FROM employees as e
+INNER JOIN dept_manager as dm ON
+e.emp_no=dm.emp_no
+INNER JOIN departments as d ON
+dm.dept_no=d.dept_no;
 
 -- List the department number for each employee along with that employee’s employee number, last name, first name, and department name.
 
