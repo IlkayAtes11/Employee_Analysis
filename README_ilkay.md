@@ -15,7 +15,7 @@ On Data Modelling phase, QuickDBD (https://www.quickdatabasediagrams.com/) was u
 
 ### Data Engineering
 
-Then, on data engineering phase, the table schema for each of the six CSV files was created. While creating table schema, primary keys, foreign keys, type of the data and other constraints were specified.
+Then, on data engineering phase, the table schema for each of the six CSV files was created. While creating table schema, primary keys, foreign keys, type of the data and other constraints were specified.[table_shemata](https://github.com/IlkayAtes11/SQL_Challenge/blob/main/code/table%20schemata.sql)
 
 After creating tables, data from csv file was imported to corresponding table, using Postgresql`s import/export function. 
 
