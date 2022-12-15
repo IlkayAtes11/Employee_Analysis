@@ -15,13 +15,17 @@ On Data Modelling phase, QuickDBD (https://www.quickdatabasediagrams.com/) was u
 
 ### Data Engineering
 
-Then, on data engineering phase, the table schema for each of the six CSV files was created. While creating table schema, primary keys, foreign keys, type of the data and other constraints were specified.[table_shemata](https://github.com/IlkayAtes11/SQL_Challenge/blob/main/code/table_schemata.sql)
+Then, on data engineering phase, the table schema for each of the six CSV files was created. While creating table schema, primary keys, foreign keys, type of the data and other constraints were specified.
+
+[table_shemata](https://github.com/IlkayAtes11/SQL_Challenge/blob/main/code/table_schemata.sql)
 
 After creating tables, data from csv file was imported to corresponding table, using Postgresql`s import/export function. 
 
 ### Data Analysis
 
 Lastly, on data analysis part, codes were written in PgAdmin to answer below questions.
+
+[query](https://github.com/IlkayAtes11/SQL_Challenge/blob/main/code/query.sql)
 
 1. List the employee number, last name, first name, sex, and salary of each employee.
 
