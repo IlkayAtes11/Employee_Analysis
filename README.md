@@ -12,7 +12,7 @@ Data from the company has six different related tables.
 On Data Modelling phase, QuickDBD (https://www.quickdatabasediagrams.com/) was used to sketch the Entity Relationship Diagram (ERD) of the tables OF Pewlett Hackard`s data.
 
 
-![erd](./images/erd.png)
+![erdiagram](./images/erdiagram.png)
 
 ### Data Engineering
 
